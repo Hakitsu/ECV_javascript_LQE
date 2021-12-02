@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil</title>
+  <link rel="stylesheet" href="./styles_accueil.css">
+  <link rel="stylesheet" href="./styles_lightbox.css">
+</head>
+<body>
+
+<!-- Accueil -->
+<section id="accueil">
+  <div class="slider">
+    <div class="slide_viewer">
+      <div class="slide_group">
+        <div class="slide">
+          <img src="img/img1.jfif" onclick="openModal();currentSlide(1)" class="slide_img">
+            <p class="top_slide">Vivez votre passion de l’automobile </p>
+            <h1 class="center_slide">Voitures haut de gamme</h1>
+            <p class="bottom_slide">Des véhicules haut de gamme & de prestige !</p>
+        </div>
+        <div class="slide">
+          <img src="img/img2.jfif" onclick="openModal();currentSlide(2)" class="slide_img">
+          <p class="top_slide">Le paradis de l’automobile de prestige </p>
+          <h1 class="center_slide">Passion du véhicule </h1>
+          <p class="bottom_slide">Retrouvez la voiture de vos rêves ! </p>
+        </div>
+        <div class="slide">
+          <img src="img/img3.jfif" onclick="openModal();currentSlide(3)" class="slide_img">
+          <p class="top_slide">L’univers des véhicules de prestige </p>
+          <h1 class="center_slide">Voitures de luxe </h1>
+          <p class="bottom_slide">Modèles, marques & comparatifs </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="directional_nav">
+    <div class="previous_btn" title="Previous">
+      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="white" stroke="white">
+        <polygon points="15.293 3.293 6.586 12 15.293 20.707 16.707 19.293 9.414 12 16.707 4.707 15.293 3.293"/>
+      </svg>   
+    </div>
+    <div class="next_btn" title="Next">
+      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="white" stroke="white">
+        <polygon points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"/>
+      </svg>       
+    </div>
+  </div>
+</section>
+<!-- Fin Accueil -->
+
+<!-- Lightbox -->
+  <!-- Ajouter 'onclick="openModal();currentSlide(position image dans slider)"' dans l'image-->
+  <div id="PictureModal" class="modal">
+
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+
+      <div class="modal-content">
+        
+        <div class="lbSlides">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/img1.jfif" class="modal-img">
+        </div>
+        
+        <div class="lbSlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/img2.jfif" class="modal-img">
+        </div>
+        
+        <div class="lbSlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/img3.jfif" class="modal-img">
+        </div>
+        
+        <!-- Contrôles -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+      </div>
+  </div> 
+<!-- Fin Lightbox -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
