@@ -29,16 +29,16 @@
     margin: 1em 0;
     height: 2em;
     line-height: 2em;
-    color: white;
+    color: #F7F5E6;
     background: #161515;
 } 
     
 .gradient:before {
-      background: linear-gradient(to right, white, #161515);
+      background: linear-gradient(to right, #F7F5E6, #161515);
 }
     
 .gradient:after {
-      background: linear-gradient(to left, white, #161515);
+      background: linear-gradient(to left, #F7F5E6, #161515);
 }
   
 
