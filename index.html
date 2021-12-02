@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./assets/css/nav.css">
   <link rel="stylesheet" href="./assets/css/àPropos.css">
   <link rel="stylesheet" href="./assets/css/styles_boutique.css">
+  <link rel="stylesheet" href="./assets/css/darkmode.css">
 
 </head>
   <header>
@@ -19,10 +20,14 @@
         <li class="parent"><a class="link" href="#">Acceuil</a></li>
         <li class="parent"><a class="link" href="#SectionàPropos">à  propos</a></li>
         <li class="parent"><a class="link" href="#">Location</a></li>
-        <li class="parent"><a class="link" href="#"> Services</a></li>
         <li class="parent"><a class="link" href="#">Contact</a></li>
       </ul>
+       <!-- fonctionnalité dark mode -->
+     <button class="buttonDarkMode button-62 " >Activer le dark mode</button>
+     <!-- fin fonctionnalité dark mode -->
     </nav>
+
+
   </header>
 
   <section id="accueil">
@@ -98,7 +103,7 @@
         <p>C'est une jolie voiture</p>
         <p><button>Voir</button></p>
       </div>
-  
+
       <div class="card">
         <img src="assets/img/voiture_vente_02.jfif" alt="Denim Jeans" style="width:100%">
         <h1>Tutur</h1>
@@ -106,7 +111,7 @@
         <p>C'est une jolie voiture</p>
         <p><button>Voir</button></p>
       </div>
-  
+
       <div class="card">
         <img src="assets/img/voiture_vente_03.jfif" alt="Denim Jeans" style="width:100%">
         <h1>Tutur</h1>
@@ -114,7 +119,7 @@
         <p>C'est une jolie voiture</p>
         <p><button>Voir</button></p>
       </div>
-  
+
       <div class="card">
         <img src="assets/img/voiture_vente_04.jfif" alt="Denim Jeans" style="width:100%">
         <h1>Tutur</h1>
@@ -128,7 +133,7 @@
 
 
   </section>
-  
+
   <!-- Lightbox -->
   <!-- Ajouter 'onclick="openModal();currentSlide(position image dans slider)"' dans l'image-->
   <div id="PictureModal" class="modal">
@@ -151,11 +156,11 @@
         <div class="numbertext">3 / 6</div>
         <img src="assets/img/img2.jfif" class="modal-img">
       </div>
-      
+
       <div class="lbSlides">
         <div class="numbertext">4 / 6</div>
         <img src="assets/img/img3.jfif" class="modal-img">
-      </div>      
+      </div>
 
       <div class="lbSlides">
         <div class="numbertext">5 / 6</div>
@@ -174,8 +179,27 @@
     </div>
   </div>
 
-  <script src="./assets/librairie/jquery3.6.0.js"></script>
-  <script src="./assets/js/script.js"></script>
+  <!-- fonctionnalité changer de devise (il suffit de cliquer sur un des symboles pour que la devise change) -->
+  <section id="SectionLocation">
+        <div class="devise">
+            <img src="./assets/img/euro.jpg" class="euro" alt="euro"/>
+            <img src="./assets/img/dollar.png" class="dollar" alt="dollar"/>
+            <img src="./assets/img/yen.png" class="yen" alt="yen"/>
 
+        </div>
+        <p id="prix">Prix : 100 000 € </p>
+    </section>
+
+
+  <!-- fin fonctionnalité changer de devise -->
+
+
+
+  <script src="./assets/librairie/jquery3.6.0.js"></script>
+  <script src="./assets/librairie/sweetlalert.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/devise.js"></script>
+  <script src="./assets/js/darkMode.js"></script>
 </body>
 </html>
