@@ -1,48 +1,122 @@
-test
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>test</title>
-    <link rel="stylesheet" href="./assets/css/nav.css">
-    <link rel="stylesheet" href="./assets/css/àPropos.css">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test</title>
+  <link rel="stylesheet" href="./assets/css/styles_accueil.css">
+  <link rel="stylesheet" href="./assets/css/styles_lightbox.css">
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <link rel="stylesheet" href="./assets/css/àPropos.css">
+
 </head>
 <body>
-   <header>
+  <header>
     <nav class="navigationBar">
-        <img class="logo" src="assets/img/logo.png" alt="image_logo" />
-        <ul class="navigation">
-          <li class="parent"><a class="link" href="#">Acceuil</a></li>
-          <li class="parent"><a class="link" href="#SectionàPropos">à  propos</a></li>
-          <li class="parent" ><a class="link" href="#">Location</a></li>
-          <li class="parent"> <a class="link" href="#"> Services</a></li>
-          <li class="parent"><a class="link" href="#">Contact</a></li>
-        </ul>
-      </nav>
-   </header>
+      <img class="logo" src="assets/img/logo.png" alt="image_logo" />
+      <ul class="navigation">
+        <li class="parent"><a class="link" href="#">Acceuil</a></li>
+        <li class="parent"><a class="link" href="#SectionàPropos">à  propos</a></li>
+        <li class="parent"><a class="link" href="#">Location</a></li>
+        <li class="parent"><a class="link" href="#"> Services</a></li>
+        <li class="parent"><a class="link" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-   <section id="SectionàPropos" >
+  <section id="SectionàPropos" >
     <h1 class= "divider gradient ">Notre Histoire</h1>
     <div class="àPropos">
-        
-       <p id="p1"> 
-         Nous sommes 3 collectionneurs de voitures de luxe souhaitant partager leur passion avec le plus grand nombre.
-         Nous nous sommes rencontrés pendant un événement automobile puis nous avons participer  ensemble à des salons d'expositions avec nos voitures respectives.
-       </p>
-       <img src="./assets/img/3voitures.jpg" alt="3 voitures" id="img3voitures"/>
-     </div>
-     <div class="àPropos">
-       <img src="./assets/img/salon_auto.jpg" alt="salon auto" id="salonAuto" />
-        <p id="p2">
-            Pendant les salons, on peut voir l'émerveillement des visiteurs devant ces bolides, tout le monde a déjà rêvés d'être au volant d'une voiture de luxe.
-            C'est pourquoi nous louons nos voitures aux particuliers en quête de sensations fortes !
-     
-        </p>
+
+      <p id="p1">
+        Nous sommes 3 collectionneurs de voitures de luxe souhaitant partager leur passion avec le plus grand nombre.
+        Nous nous sommes rencontrés pendant un événement automobile puis nous avons participer  ensemble à des salons d'expositions avec nos voitures respectives.
+      </p>
+      <img src="./assets/img/3voitures.jpg" alt="3 voitures" id="img3voitures"/>
     </div>
-    </section>
+    <div class="àPropos">
+      <img src="./assets/img/salon_auto.jpg" alt="salon auto" id="salonAuto" />
+      <p id="p2">
+        Pendant les salons, on peut voir l'émerveillement des visiteurs devant ces bolides, tout le monde a déjà rêvés d'être au volant d'une voiture de luxe.
+        C'est pourquoi nous louons nos voitures aux particuliers en quête de sensations fortes !
+
+      </p>
+    </div>
+  </section>
+  <section id="accueil">
+    <div class="slider">
+      <div class="slide_viewer">
+        <div class="slide_group">
+          <div class="slide">
+            <img src="assets/img/img1.jfif" onclick="openModal();currentSlide(1)" class="slide_img">
+            <p class="top_slide">Vivez votre passion de l’automobile </p>
+            <h1 class="center_slide">Voitures haut de gamme</h1>
+            <p class="bottom_slide">Des véhicules haut de gamme & de prestige !</p>
+          </div>
+          <div class="slide">
+            <img src="assets/img/img2.jfif" onclick="openModal();currentSlide(2)" class="slide_img">
+            <p class="top_slide">Le paradis de l’automobile de prestige </p>
+            <h1 class="center_slide">Passion du véhicule </h1>
+            <p class="bottom_slide">Retrouvez la voiture de vos rêves ! </p>
+          </div>
+          <div class="slide">
+            <img src="assets/img/img3.jfif" onclick="openModal();currentSlide(3)" class="slide_img">
+            <p class="top_slide">L’univers des véhicules de prestige </p>
+            <h1 class="center_slide">Voitures de luxe </h1>
+            <p class="bottom_slide">Modèles, marques & comparatifs </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="directional_nav">
+      <div class="previous_btn" title="Previous">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="white" stroke="white">
+          <polygon points="15.293 3.293 6.586 12 15.293 20.707 16.707 19.293 9.414 12 16.707 4.707 15.293 3.293"/>
+        </svg>
+      </div>
+      <div class="next_btn" title="Next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="white" stroke="white">
+          <polygon points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Accueil -->
+
+  <!-- Lightbox -->
+  <!-- Ajouter 'onclick="openModal();currentSlide(position image dans slider)"' dans l'image-->
+  <div id="PictureModal" class="modal">
+
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+
+    <div class="modal-content">
+
+      <div class="lbSlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="assets/img/img1.jfif" class="modal-img">
+      </div>
+
+      <div class="lbSlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="assets/img/img2.jfif" class="modal-img">
+      </div>
+
+      <div class="lbSlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="assets/img/img3.jfif" class="modal-img">
+      </div>
+
+      <!-- Contrôles -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+  </div>
+
+  <script src="./assets/librairie/jquery3.6.0.js"></script>
+  <script src="./assets/js/script.js"></script>
 
 </body>
 </html>
