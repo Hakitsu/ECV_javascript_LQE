@@ -9,9 +9,10 @@ html, body {
 }
 
 #accueil {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   max-width: 100%;
   height: 100%;
+  width: 100vw;
 }
 
 /*Slider accueil*/
@@ -35,9 +36,10 @@ html, body {
 
 .slide {
   display: none;
-  height: 100%;
+  height: 93%;
   position: absolute;
   width: 100%;
+  overflow-y: hidden;
 }
 
 .slide .slide_img  {

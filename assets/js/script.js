@@ -124,3 +124,35 @@ function openModal() {
     }
     slides[slideIndex-1].style.display = "block";
   }
+
+
+// Boutique
+/*
+$(function() {
+  $('ul.nav a').bind('click', function(event) {
+    var $anchor = $(this);
+    
+    //if you want to use one of the easing effects:
+    $('html, body').stop().animate({
+        scrollLeft: $($anchor.attr('href')).offset().left
+    }, 1250,'easeInOutExpo');
+
+
+    event.preventDefault();
+  });
+
+  $('div.card a').bind('click', function(event) {
+    var $anchor = $(this);
+    
+    //if you want to use one of the easing effects:
+    $('html, body').stop().animate({
+        scrollLeft: $($anchor.attr('href')).offset().left
+    }, 1250,'easeInOutExpo');
+
+ 
+
+    event.preventDefault();
+  });
+
+});
+*/
