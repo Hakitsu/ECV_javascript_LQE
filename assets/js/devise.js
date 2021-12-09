@@ -1,18 +1,18 @@
 let Prix = $('#prix');
-let ButtonDollar = $('.dollar');
-let ButtonEuro = $('.euro');
-let ButtonYen = $('.yen');
 
-ButtonEuro.on('click', function() {
-    Prix.text("Prix: 1200 €")
-});
-
-ButtonDollar.on('click', function() {
-    Prix.text("Prix: 1360 $")
-});
-
-ButtonYen.on('click', function() {
-    Prix.text("Prix: 154 000 ¥ ")
+$(".imgDevise").click(function(){
+    let PrixEuro = $(this).data("value")
+    if($(this).attr("devise") == "euro"){
+        Prix.text("Prix: " + PrixEuro + " €")
+    }
+    if($(this).attr("devise") == "dollar"){
+        let PrixDollar = (PrixEuro * 1.13).toFixed(2)
+        Prix.text("Prix: " + PrixDollar + " $")
+    }
+    if($(this).attr("devise") == "yen"){
+        let PrixYen = (PrixEuro * 128.54).toFixed(2)
+        Prix.text("Prix: " + PrixYen + " ¥")
+    }
 });
 
 
