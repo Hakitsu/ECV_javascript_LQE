@@ -4,7 +4,7 @@ let SectionàProposH1 = $('#propos h1 ');
 let SectionBoutiqueH1 = $('#Boutique h1');
 let feedbackInput = $('.feedback-input');
 let boutique = $('#Boutique');
-let card = $('.card button')
+let card = $('#Boutique button')
 
 buttonDarkMode.on('click', function() {
     if(buttonDarkMode.hasClass('darkMode')){
@@ -14,7 +14,7 @@ buttonDarkMode.on('click', function() {
     SectionàPropos.removeClass('darkMode')
     SectionàProposH1.removeClass('darkMode')
     SectionàProposH1.addClass('divider gradient')
-    card.addClass('darkMode')
+    card.removeClass('darkMode')
     $('body').removeClass('darkMode')
     $('html').removeClass('darkMode')
 
@@ -35,7 +35,7 @@ buttonDarkMode.on('click', function() {
         SectionàPropos.addClass('darkMode')
         SectionàProposH1.addClass('darkMode')
         SectionàProposH1.removeClass('divider gradient')
-        card.removeClass('darkMode')
+        card.addClass('darkMode')
         feedbackInput.addClass('darkMode')
 
         boutique.addClass('darkMode')

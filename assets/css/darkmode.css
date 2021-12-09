@@ -30,7 +30,7 @@ body.darkMode{
   text-align: center;
 } 
 
-.card button .darkMode{
+#Boutique button.darkMode{
   color: black;
 	background-color: white;
 }
