@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./assets/css/nav.css">
   <link rel="stylesheet" href="./assets/css/àPropos.css">
   <link rel="stylesheet" href="./assets/css/darkmode.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
 
 </head>
 <body>
@@ -30,7 +31,7 @@
 
   </header>
 
-  <section style="display: " id="propos" >
+  <section style="" id="propos" >
     <h1 class= "divider gradient ">Notre Histoire</h1>
     <div class="àPropos">
 
@@ -121,20 +122,37 @@
   </div>
 
   <!-- fonctionnalité changer de devise (il suffit de cliquer sur un des symboles pour que la devise change) -->
-  <section id="SectionLocation">
-        <div class="devise">
-            <img src="./assets/img/euro.jpg" class="euro" alt="euro"/>
-            <img src="./assets/img/dollar.png" class="dollar" alt="dollar"/>
-            <img src="./assets/img/yen.png" class="yen" alt="yen"/>
-
-        </div>
-        <p id="prix">Prix : 100 000 € </p>
-    </section>
+  <section id="location">
+    <div class="devise">
+      <img src="./assets/img/euro.jpg" class="euro" alt="euro"/>
+      <img src="./assets/img/dollar.png" class="dollar" alt="dollar"/>
+      <img src="./assets/img/yen.png" class="yen" alt="yen"/>
+    </div>
+    <p id="prix">Prix : 100 000 € </p>
+  </section>
 
 
   <!-- fin fonctionnalité changer de devise -->
 
-
+  <section id="contact">
+    <form method="post">
+      <div>
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="user_name">
+      </div>
+      <div>
+          <label for="mail">E-mail :</label>
+          <input type="email" id="mail" name="user_mail">
+      </div>
+      <div>
+          <label for="msg">Message :</label>
+          <textarea id="msg" name="user_message"></textarea>
+      </div>
+      <div class="button">
+        <a type="button" id="confirm_button">Envoyer</a>
+    </div>
+  </form>
+  </section>
 
   <script src="./assets/librairie/jquery3.6.0.js"></script>
   <script src="./assets/librairie/sweetlalert.js"></script>
@@ -143,5 +161,6 @@
   <script src="./assets/js/devise.js"></script>
   <script src="./assets/js/darkMode.js"></script>
   <script src="./assets/js/showhide.js"></script>
+  <script src="./assets/js/contact.js"></script>
 </body>
 </html>

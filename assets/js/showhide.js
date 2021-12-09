@@ -13,11 +13,11 @@ $(".parent .link").on("click", function(){
             break;
 
         case "location":
-            console.log("peut-etre");
+            $("#location").fadeIn();
             break;
 
         case "contact":
-            console.log("pas envie");
+            $("#contact:").fadeIn();
             break;
                         
         default:
