@@ -3,13 +3,13 @@ body.darkMode{
     color:white
 }
 
-#SectionàPropos.darkMode{
+#propos.darkMode{
     background-color: #2b2929;
     color:white;
 
 }
 
-#SectionàPropos h1.darkMode {
+#propos h1.darkMode {
     color:white; 
     padding-left: 750px;
 } 
@@ -42,4 +42,8 @@ body.darkMode{
   
   .button-62:not([disabled]):hover {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(146, 88, 51, 0.5);
+  }
+
+  .feedback-input.darkMode::placeholder {
+    color: white;
   }
