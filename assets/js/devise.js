@@ -1,20 +1,28 @@
-let Prix = $('#prix');
-
 $(".imgDevise").click(function(){
-    let PrixEuro = $(this).data("value")
+
     if($(this).attr("devise") == "euro"){
-        Prix.text("Prix: " + PrixEuro + " €")
+        $('.price').each(function(i){
+            var prix = ($(this).data("value") * 0.89).toFixed(0); 
+            $(this).text(prix + " €");
+           
+        });
     }
     if($(this).attr("devise") == "dollar"){
-        let PrixDollar = (PrixEuro * 1.13).toFixed(2)
-        Prix.text("Prix: " + PrixDollar + " $")
+        $('.price').each(function(i){
+            var prix = $(this).data("value"); 
+            $(this).text(prix + " $");
+           
+        });
     }
     if($(this).attr("devise") == "yen"){
-        let PrixYen = (PrixEuro * 128.54).toFixed(2)
-        Prix.text("Prix: " + PrixYen + " ¥")
+        $('.price').each(function(i){
+            var prix = ($(this).data("value") * 113.5).toFixed(0); 
+            $(this).text(prix + " ¥");
+           
+        });
     }
+   
+       
 });
-
-
 
 
