@@ -17,7 +17,7 @@
     <nav class="navigationBar">
       <img class="logo" src="assets/img/logo.png" alt="image_logo" onclick="openModal();currentSlide(1)"/>
       <ul class="navigation">
-        <li class="parent"><a class="link" href="#">Acceuil</a></li>
+        <li class="parent"><a class="link" href="#">Accueil</a></li>
         <li class="parent"><a class="link" href="#SectionàPropos">à  propos</a></li>
         <li class="parent"><a class="link" href="#">Location</a></li>
         <li class="parent"><a class="link" href="#">Contact</a></li>
@@ -94,14 +94,14 @@
 
     <h1 class= "divider gradient ">Boutique</h1>
 
-    <div class="card-container">
+    <div class="card-container" id="section0">
 
       <div class="card">
         <img src="assets/img/voiture_vente_01.jfif" alt="Denim Jeans" style="width:100%">
         <h1>Tutur</h1>
         <p class="price">256 000 €</p>
         <p>C'est une jolie voiture</p>
-        <p><button>Voir</button></p>
+        <p><a href="#section1"><button>Voir</button></a></p>
       </div>
 
       <div class="card">
@@ -109,7 +109,7 @@
         <h1>Tutur</h1>
         <p class="price">256 000 €</p>
         <p>C'est une jolie voiture</p>
-        <p><button>Voir</button></p>
+        <p><a href="#section2"><button>Voir</button></a></p>
       </div>
 
       <div class="card">
@@ -117,7 +117,7 @@
         <h1>Tutur</h1>
         <p class="price">256 000 €</p>
         <p>C'est une jolie voiture</p>
-        <p><button>Voir</button></p>
+        <p><a href="#section3"><button>Voir</button></a></p>
       </div>
 
       <div class="card">
@@ -125,13 +125,312 @@
         <h1>Tutur</h1>
         <p class="price">256 000 €</p>
         <p>C'est une jolie voiture</p>
-        <p><button>Voir</button></p>
+        <p><a href="#section4"><button>Voir</button></a></p>
       </div>
 
     </div>
 
 
 
+  </section>
+
+  <section>
+    <!--Produit 01-->
+    <div class="section_vente noir" id="section1">
+      <!--
+      <h2 class="titre_vente">Section 1</h2>
+      <p class=".paragraphe_vente"></p>
+        Voiture 1
+      </p>
+      -->
+      <div id="produit">	
+        <div class="details_produit">
+          <h1>Twingo S</h1>
+          <!-- 		<span class="hint new">New</span> -->
+          <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
+          <!-- 		the Product rating 
+            <span class="hint-star star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </span>
+          -->
+          <p class="description_produit">" Avec ses courbures digne de l'antilope et ses pneus GoodYear V 4Seasons, ce modèle adhère au bitume tel le bigorneau s'accrochant aux récifs "</p>
+
+          <div class="controle_bouton_produit">
+            <button class="bouton_produit">
+              <span class="texte_bouton_produit">contact</span>
+            </button>
+          </div>   
+        </div>
+        <div class="image_produit">     
+          <img src="assets/img/voiture_vente_01.jfif" alt="Voiture">
+          <div class="info_produit">
+            <h2>Description</h2>
+            <ul>
+              <li><strong>Vitesse: </strong>315 km/h max</li>
+              <li><strong>Accélération: </strong>120 km/h secs</li>
+              <li><strong>Dérapage: </strong> 3/5 </li>
+              <li><strong>Consommation: </strong>8l / 100</li>
+              <li><strong>Hors piste: </strong> 1/5 </li>
+              <li><strong>Options: </strong>Climatisation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav_vente">
+        <ul class="nav">
+          <li>
+            <a href="#section4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" viewBox="0 0 10.605 15.555" fill="white">
+                <polygon points="10.605 12.727 5.656 7.776 10.605 2.828 7.777 0 0 7.776 7.777 15.555 10.605 12.727"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#section0">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="125px" height="60px" viewBox="0 0 100 100" fill="white" enable-background="new 0 0 100 100" xml:space="preserve">
+                <circle cx="50" cy="50" r="20"/>
+                <circle cx="0" cy="50" r="20"/>
+                <circle cx="100" cy="50" r="20"/>
+              </svg>
+              <!--<span class="tooltiptext">Tooltip text</span>-->
+            </a>       
+          </li>
+          <li>
+            <a href="#section2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" viewBox="0 0 10.605 15.555" fill="white">
+                <polygon points="2.828 15.555 10.605 7.776 2.828 0 0 2.828 4.949 7.776 0 12.727 2.828 15.555"/>
+              </svg>            
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+      <!--Produit 02-->
+  <div class="section_vente blanc" id="section2">
+    <!--
+    <h2 class="titre_vente">Section 2</h2>
+    <p class=".paragraphe_vente"></p>
+      Voiture 2
+    </p>
+    -->
+    <div id="produit">	
+      <div class="details_produit">
+        <h1>Ferrari</h1>
+        <!-- 		<span class="hint new">New</span> -->
+        <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
+        <!-- 		the Product rating 
+          <span class="hint-star star">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </span>
+        -->
+        <p class="description_produit">" Avec ses courbures digne de l'antilope et ses pneus GoodYear V 4Seasons, ce modèle adhère au bitume tel le bigorneau s'accrochant aux récifs "</p>
+
+        <div class="controle_bouton_produit">
+          <button class="bouton_produit">
+            <span class="texte_bouton_produit">contact</span>
+          </button>
+        </div>   
+      </div>
+      <div class="image_produit">     
+        <img src="assets/img/voiture_vente_02.jfif" alt="Voiture">
+        <div class="info_produit">
+          <h2>Description</h2>
+          <ul>
+            <li><strong>Vitesse: </strong>315 km/h max</li>
+            <li><strong>Accélération: </strong>120 km/h secs</li>
+            <li><strong>Dérapage: </strong> 3/5 </li>
+            <li><strong>Consommation: </strong>8l / 100</li>
+            <li><strong>Hors piste: </strong> 1/5 </li>
+            <li><strong>Options: </strong>Climatisation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="nav_vente">
+      <ul class="nav">
+        <li>
+          <a href="#section1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" viewBox="0 0 10.605 15.555" fill="black">
+              <polygon points="10.605 12.727 5.656 7.776 10.605 2.828 7.777 0 0 7.776 7.777 15.555 10.605 12.727"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#section0">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="125px" height="60px" viewBox="0 0 100 100" fill="black" enable-background="new 0 0 100 100" xml:space="preserve">
+              <circle cx="50" cy="50" r="20"/>
+              <circle cx="0" cy="50" r="20"/>
+              <circle cx="100" cy="50" r="20"/>
+            </svg>
+            <!--<span class="tooltiptext">Tooltip text</span>-->
+          </a>
+        </li>
+        <li>
+          <a href="#section3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" viewBox="0 0 10.605 15.555" fill="black">
+              <polygon points="2.828 15.555 10.605 7.776 2.828 0 0 2.828 4.949 7.776 0 12.727 2.828 15.555"/>
+            </svg>            
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Produit 03-->
+  <div class="section_vente noir" id="section3">
+    <!--
+    <h2 class="titre_vente">Section 3</h2>
+    <p class=".paragraphe_vente"></p>
+      Voiture 3
+    </p>
+    -->
+    <div id="produit">	
+      <div class="details_produit">
+        <h1>Renault</h1>
+        <!-- 		<span class="hint new">New</span> -->
+        <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
+        <!-- 		the Product rating 
+          <span class="hint-star star">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </span>
+        -->
+        <p class="description_produit">" Avec ses courbures digne de l'antilope et ses pneus GoodYear V 4Seasons, ce modèle adhère au bitume tel le bigorneau s'accrochant aux récifs "</p>
+
+        <div class="controle_bouton_produit">
+          <button class="bouton_produit">
+            <span class="texte_bouton_produit">contact</span>
+          </button>
+        </div>   
+      </div>
+      <div class="image_produit">     
+        <img src="assets/img/voiture_vente_03.jfif" alt="Voiture">
+        <div class="info_produit">
+          <h2>Description</h2>
+          <ul>
+            <li><strong>Vitesse: </strong>315 km/h max</li>
+            <li><strong>Accélération: </strong>120 km/h secs</li>
+            <li><strong>Dérapage: </strong> 3/5 </li>
+            <li><strong>Consommation: </strong>8l / 100</li>
+            <li><strong>Hors piste: </strong> 1/5 </li>
+            <li><strong>Options: </strong>Climatisation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="nav_vente">
+      <ul class="nav">
+        <li>
+          <a href="#section2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" viewBox="0 0 10.605 15.555" fill="white">
+              <polygon points="10.605 12.727 5.656 7.776 10.605 2.828 7.777 0 0 7.776 7.777 15.555 10.605 12.727"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#section0">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="125px" height="60px" viewBox="0 0 100 100" fill="white" enable-background="new 0 0 100 100" xml:space="preserve">
+              <circle cx="50" cy="50" r="20"/>
+              <circle cx="0" cy="50" r="20"/>
+              <circle cx="100" cy="50" r="20"/>
+            </svg>
+            <!--<span class="tooltiptext">Tooltip text</span>-->
+          </a>
+        </li>
+        <li>
+          <a href="#section4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" viewBox="0 0 10.605 15.555" fill="white">
+              <polygon points="2.828 15.555 10.605 7.776 2.828 0 0 2.828 4.949 7.776 0 12.727 2.828 15.555"/>
+            </svg>            
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Produit 04-->
+  <div class="section_vente blanc" id="section4">
+    <!--
+    <h2 class="titre_vente">Section 4</h2>
+    <p class=".paragraphe_vente"></p>
+      Voiture 4
+    </p>
+    -->
+    <div id="produit">	
+      <div class="details_produit">
+        <h1>Vélo</h1>
+        <!-- 		<span class="hint new">New</span> -->
+        <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
+        <!-- 		the Product rating 
+          <span class="hint-star star">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </span>
+        -->
+        <p class="description_produit">" Avec ses courbures digne de l'antilope et ses pneus GoodYear V 4Seasons, ce modèle adhère au bitume tel le bigorneau s'accrochant aux récifs "</p>
+
+        <div class="controle_bouton_produit">
+          <button class="bouton_produit">
+            <span class="texte_bouton_produit">contact</span>
+          </button>
+        </div>   
+      </div>
+      <div class="image_produit">     
+        <img src="assets/img/voiture_vente_04.jfif" alt="Voiture">
+        <div class="info_produit">
+          <h2>Description</h2>
+          <ul>
+            <li><strong>Vitesse: </strong>315 km/h max</li>
+            <li><strong>Accélération: </strong>120 km/h secs</li>
+            <li><strong>Dérapage: </strong> 3/5 </li>
+            <li><strong>Consommation: </strong>8l / 100</li>
+            <li><strong>Hors piste: </strong> 1/5 </li>
+            <li><strong>Options: </strong>Climatisation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="nav_vente">
+      <ul class="nav">
+        <li>
+          <a href="#section3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" viewBox="0 0 10.605 15.555" fill="black">
+              <polygon points="10.605 12.727 5.656 7.776 10.605 2.828 7.777 0 0 7.776 7.777 15.555 10.605 12.727"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#section0">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="125px" height="60px" viewBox="0 0 100 100" fill="black" enable-background="new 0 0 100 100" xml:space="preserve">
+              <circle cx="50" cy="50" r="20"/>
+              <circle cx="0" cy="50" r="20"/>
+              <circle cx="100" cy="50" r="20"/>
+            </svg>
+            <!--<span class="tooltiptext">Tooltip text</span>-->
+          </a>
+        </li>
+        <li>
+          <a href="#section1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" viewBox="0 0 10.605 15.555" fill="black">
+              <polygon points="2.828 15.555 10.605 7.776 2.828 0 0 2.828 4.949 7.776 0 12.727 2.828 15.555"/>
+            </svg>            
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
   </section>
 
   <!-- Lightbox -->
@@ -196,10 +495,13 @@
 
 
   <script src="./assets/librairie/jquery3.6.0.js"></script>
-  <script src="./assets/librairie/sweetlalert.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+  <!--<script src="./assets/librairie/sweetlalert.js"></script>-->
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/index.js"></script>
   <script src="./assets/js/devise.js"></script>
   <script src="./assets/js/darkMode.js"></script>
+  
 </body>
 </html>
