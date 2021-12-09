@@ -1,3 +1,9 @@
+html.darkMode{
+  background-color: #2b2929;
+  color:white
+}
+
+
 body.darkMode{
     background-color: #2b2929;
     color:white
@@ -11,8 +17,23 @@ body.darkMode{
 
 #propos h1.darkMode {
     color:white; 
-    padding-left: 750px;
+    text-align: center;
 } 
+
+#Boutique.darkMode {
+  background-color: #2b2929;
+  color:white
+}
+
+#Boutique h1.darkMode {
+  color:white; 
+  text-align: center;
+} 
+
+.card button .darkMode{
+  color: black;
+	background-color: white;
+}
     
 .button-62 {
     background: linear-gradient(to bottom right, #161515, #9b5c35);
