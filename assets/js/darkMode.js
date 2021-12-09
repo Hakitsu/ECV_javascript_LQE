@@ -1,6 +1,6 @@
 let buttonDarkMode = $('.buttonDarkMode');
-let SectionàPropos = $('#SectionàPropos');
-let SectionàProposH1 = $('#SectionàPropos h1');
+let SectionàPropos = $('#propos');
+let SectionàProposH1 = $('#propos h1');
 
 buttonDarkMode.on('click', function() {
     if(buttonDarkMode.hasClass('darkMode')){
