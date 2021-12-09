@@ -2,7 +2,7 @@ newsletter_check = false;
 $(function(){
     $("body").on("mouseleave",function(){
         if(newsletter_check == false){
-            exitPage();
+            //exitPage();
             newsletter_check = true;
         }
     })
