@@ -32,25 +32,6 @@
 
   </header>
 
-  <section style="" id="propos" >
-    <h1 class= "divider gradient ">Notre Histoire</h1>
-    <div class="àPropos">
-
-      <p id="p1">
-        Nous sommes 3 collectionneurs de voitures de luxe souhaitant partager leur passion avec le plus grand nombre.
-        Nous nous sommes rencontrés pendant un événement automobile puis nous avons participer  ensemble à des salons d'expositions avec nos voitures respectives.
-      </p>
-      <img src="./assets/img/3voitures.jpg" alt="3 voitures" id="img3voitures"/>
-    </div>
-    <div class="àPropos">
-      <img src="./assets/img/salon_auto.jpg" alt="salon auto" id="salonAuto" />
-      <p id="p2">
-        Pendant les salons, on peut voir l'émerveillement des visiteurs devant ces bolides, tout le monde a déjà rêvés d'être au volant d'une voiture de luxe.
-        C'est pourquoi nous louons nos voitures aux particuliers en quête de sensations fortes !
-
-      </p>
-    </div>
-  </section>
   <section id="accueil">
     <div class="slider">
       <div class="slide_viewer">
@@ -115,37 +96,37 @@
 
     <h1 class= "divider gradient ">Boutique</h1>
 
-    <div class="card-container" id="section0">
+    <div class="card-container">
 
       <div class="card">
-        <img src="assets/img/voiture_vente_01.jfif" alt="Denim Jeans" style="width:100%">
-        <h1>Tutur</h1>
-        <p class="price">256 000 €</p>
-        <p>C'est une jolie voiture</p>
+        <img src="assets/img/voiture_vente_01.jfif" onclick="openModal();currentSlide(7)" alt="Denim Jeans" style="width:100% ">
+        <h1>Twingo S</h1>
+        <p class="price">265 090 $</p>
+        <p>La bête de la ville</p>
         <p><a href="#section1"><button>Voir</button></a></p>
       </div>
 
       <div class="card">
-        <img src="assets/img/voiture_vente_02.jfif" alt="Denim Jeans" style="width:100%">
-        <h1>Tutur</h1>
-        <p class="price">256 000 €</p>
-        <p>C'est une jolie voiture</p>
+        <img src="assets/img/voiture_vente_02.jfif" onclick="openModal();currentSlide(8)" alt="Denim Jeans" style="width:100%">
+        <h1>Aston Martin DB5</h1>
+        <p class="price">2 300 000 $</p>
+        <p>La destructrice de porte-monnaie</p>
         <p><a href="#section2"><button>Voir</button></a></p>
       </div>
 
       <div class="card">
-        <img src="assets/img/voiture_vente_03.jfif" alt="Denim Jeans" style="width:100%">
-        <h1>Tutur</h1>
-        <p class="price">256 000 €</p>
-        <p>C'est une jolie voiture</p>
+        <img src="assets/img/voiture_vente_03.jfif" onclick="openModal();currentSlide(9)" alt="Denim Jeans" style="width:100%">
+        <h1>300 SL Roadster</h1>
+        <p class="price">645 000 $</p>
+        <p>Un classique</p>
         <p><a href="#section3"><button>Voir</button></a></p>
       </div>
 
       <div class="card">
-        <img src="assets/img/voiture_vente_04.jfif" alt="Denim Jeans" style="width:100%">
-        <h1>Tutur</h1>
-        <p class="price">256 000 €</p>
-        <p>C'est une jolie voiture</p>
+        <img src="assets/img/voiture_vente_04.jfif" onclick="openModal();currentSlide(10)" alt="Denim Jeans" style="width:100%">
+        <h1>GLA</h1>
+        <p class="price">360 000 $</p>
+        <p>Elle décoiffe !</p>
         <p><a href="#section4"><button>Voir</button></a></p>
       </div>
 
@@ -156,28 +137,11 @@
   </section>
 
   <section>
-    <!--Produit 01-->
+    <!--Voiture 01-->
     <div class="section_vente noir" id="section1">
-      <!--
-      <h2 class="titre_vente">Section 1</h2>
-      <p class=".paragraphe_vente"></p>
-        Voiture 1
-      </p>
-      -->
-      <div id="produit">
+      <div class="produit">
         <div class="details_produit">
           <h1>Twingo S</h1>
-          <!-- 		<span class="hint new">New</span> -->
-          <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
-          <!-- 		the Product rating
-            <span class="hint-star star">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-            </span>
-          -->
           <p class="description_produit">" Avec ses courbures digne de l'antilope et ses pneus GoodYear V 4Seasons, ce modèle adhère au bitume tel le bigorneau s'accrochant aux récifs "</p>
 
           <div class="controle_bouton_produit">
@@ -191,12 +155,12 @@
           <div class="info_produit">
             <h2>Description</h2>
             <ul>
-              <li><strong>Vitesse: </strong>315 km/h max</li>
-              <li><strong>Accélération: </strong>120 km/h secs</li>
-              <li><strong>Dérapage: </strong> 3/5 </li>
-              <li><strong>Consommation: </strong>8l / 100</li>
-              <li><strong>Hors piste: </strong> 1/5 </li>
-              <li><strong>Options: </strong>Climatisation</li>
+              <li><strong>Vitesse: </strong>160 km/h max</li>
+              <li><strong>Accélération: </strong>100 km/h en 12 sec</li>
+              <li><strong>Poids: </strong> 1 350 Kg </li>
+              <li><strong>Maniabilité: </strong> 6 / 10</li>
+              <li><strong>Hors piste: </strong> 2 / 5 </li>
+              <li><strong>Prix: </strong>265 090 $</li>
             </ul>
           </div>
         </div>
@@ -211,13 +175,12 @@
             </a>
           </li>
           <li>
-            <a href="#section0">
+            <a href="#Boutique">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="125px" height="60px" viewBox="0 0 100 100" fill="white" enable-background="new 0 0 100 100" xml:space="preserve">
                 <circle cx="50" cy="50" r="20"/>
                 <circle cx="0" cy="50" r="20"/>
                 <circle cx="100" cy="50" r="20"/>
               </svg>
-              <!--<span class="tooltiptext">Tooltip text</span>-->
             </a>
           </li>
           <li>
@@ -230,28 +193,12 @@
         </ul>
       </div>
     </div>
-      <!--Produit 02-->
+      <!--Voiture 02-->
   <div class="section_vente blanc" id="section2">
-    <!--
-    <h2 class="titre_vente">Section 2</h2>
-    <p class=".paragraphe_vente"></p>
-      Voiture 2
-    </p>
-    -->
-    <div id="produit">
+    <div class="produit">
       <div class="details_produit">
-        <h1>Ferrari</h1>
-        <!-- 		<span class="hint new">New</span> -->
-        <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
-        <!-- 		the Product rating
-          <span class="hint-star star">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-          </span>
-        -->
+        <h1>Aston Martin DB5</h1>
+
         <p class="description_produit">" Avec ses courbures digne de l'antilope et ses pneus GoodYear V 4Seasons, ce modèle adhère au bitume tel le bigorneau s'accrochant aux récifs "</p>
 
         <div class="controle_bouton_produit">
@@ -265,12 +212,12 @@
         <div class="info_produit">
           <h2>Description</h2>
           <ul>
-            <li><strong>Vitesse: </strong>315 km/h max</li>
-            <li><strong>Accélération: </strong>120 km/h secs</li>
-            <li><strong>Dérapage: </strong> 3/5 </li>
-            <li><strong>Consommation: </strong>8l / 100</li>
-            <li><strong>Hors piste: </strong> 1/5 </li>
-            <li><strong>Options: </strong>Climatisation</li>
+            <li><strong>Vitesse: </strong>230 km/h max</li>
+            <li><strong>Accélération: </strong>100 km/h en 7.5 sec</li>
+            <li><strong>Poids: </strong> 1 465 Kg </li>
+            <li><strong>Maniabilité: </strong> 8 / 10</li>
+            <li><strong>Hors piste: </strong> 1 / 5 </li>
+            <li><strong>Prix: </strong>Un rein</li>
           </ul>
         </div>
       </div>
@@ -285,13 +232,12 @@
           </a>
         </li>
         <li>
-          <a href="#section0">
+          <a href="#Boutique">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="125px" height="60px" viewBox="0 0 100 100" fill="black" enable-background="new 0 0 100 100" xml:space="preserve">
               <circle cx="50" cy="50" r="20"/>
               <circle cx="0" cy="50" r="20"/>
               <circle cx="100" cy="50" r="20"/>
             </svg>
-            <!--<span class="tooltiptext">Tooltip text</span>-->
           </a>
         </li>
         <li>
@@ -304,28 +250,12 @@
       </ul>
     </div>
   </div>
-  <!--Produit 03-->
+  <!--Voiture 03-->
   <div class="section_vente noir" id="section3">
-    <!--
-    <h2 class="titre_vente">Section 3</h2>
-    <p class=".paragraphe_vente"></p>
-      Voiture 3
-    </p>
-    -->
-    <div id="produit">
+    <div class="produit">
       <div class="details_produit">
-        <h1>Renault</h1>
-        <!-- 		<span class="hint new">New</span> -->
-        <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
-        <!-- 		the Product rating
-          <span class="hint-star star">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-          </span>
-        -->
+        <h1>300 SL Roadster</h1>
+
         <p class="description_produit">" Avec ses courbures digne de l'antilope et ses pneus GoodYear V 4Seasons, ce modèle adhère au bitume tel le bigorneau s'accrochant aux récifs "</p>
 
         <div class="controle_bouton_produit">
@@ -339,12 +269,12 @@
         <div class="info_produit">
           <h2>Description</h2>
           <ul>
-            <li><strong>Vitesse: </strong>315 km/h max</li>
-            <li><strong>Accélération: </strong>120 km/h secs</li>
-            <li><strong>Dérapage: </strong> 3/5 </li>
-            <li><strong>Consommation: </strong>8l / 100</li>
-            <li><strong>Hors piste: </strong> 1/5 </li>
-            <li><strong>Options: </strong>Climatisation</li>
+            <li><strong>Vitesse: </strong>245 km/h max</li>
+            <li><strong>Accélération: </strong>100 km/h en 8 sec</li>
+            <li><strong>Poids: </strong> 1 293 Kg </li>
+            <li><strong>Maniabilité: </strong> 7 / 10</li>
+            <li><strong>Hors piste: </strong> 2 / 5 </li>
+            <li><strong>Prix: </strong>645 000 $</li>
           </ul>
         </div>
       </div>
@@ -359,13 +289,12 @@
           </a>
         </li>
         <li>
-          <a href="#section0">
+          <a href="#Boutique">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="125px" height="60px" viewBox="0 0 100 100" fill="white" enable-background="new 0 0 100 100" xml:space="preserve">
               <circle cx="50" cy="50" r="20"/>
               <circle cx="0" cy="50" r="20"/>
               <circle cx="100" cy="50" r="20"/>
             </svg>
-            <!--<span class="tooltiptext">Tooltip text</span>-->
           </a>
         </li>
         <li>
@@ -378,28 +307,12 @@
       </ul>
     </div>
   </div>
-  <!--Produit 04-->
+  <!--Voiture 04-->
   <div class="section_vente blanc" id="section4">
-    <!--
-    <h2 class="titre_vente">Section 4</h2>
-    <p class=".paragraphe_vente"></p>
-      Voiture 4
-    </p>
-    -->
-    <div id="produit">
+    <div class="produit">
       <div class="details_produit">
-        <h1>Vélo</h1>
-        <!-- 		<span class="hint new">New</span> -->
-        <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
-        <!-- 		the Product rating
-          <span class="hint-star star">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-          </span>
-        -->
+        <h1>GLA</h1>
+
         <p class="description_produit">" Avec ses courbures digne de l'antilope et ses pneus GoodYear V 4Seasons, ce modèle adhère au bitume tel le bigorneau s'accrochant aux récifs "</p>
 
         <div class="controle_bouton_produit">
@@ -413,12 +326,12 @@
         <div class="info_produit">
           <h2>Description</h2>
           <ul>
-            <li><strong>Vitesse: </strong>315 km/h max</li>
-            <li><strong>Accélération: </strong>120 km/h secs</li>
-            <li><strong>Dérapage: </strong> 3/5 </li>
-            <li><strong>Consommation: </strong>8l / 100</li>
-            <li><strong>Hors piste: </strong> 1/5 </li>
-            <li><strong>Options: </strong>Climatisation</li>
+            <li><strong>Vitesse: </strong>215 km/h max</li>
+            <li><strong>Accélération: </strong>100 km/h en 8.5 sec</li>
+            <li><strong>Poids: </strong> 946 Kg </li>
+            <li><strong>Maniabilité: </strong> 9 / 10</li>
+            <li><strong>Hors piste: </strong> 3 / 5 </li>
+            <li><strong>Prix: </strong>360 000 $</li>
           </ul>
         </div>
       </div>
@@ -433,13 +346,12 @@
           </a>
         </li>
         <li>
-          <a href="#section0">
+          <a href="#Boutique">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="125px" height="60px" viewBox="0 0 100 100" fill="black" enable-background="new 0 0 100 100" xml:space="preserve">
               <circle cx="50" cy="50" r="20"/>
               <circle cx="0" cy="50" r="20"/>
               <circle cx="100" cy="50" r="20"/>
             </svg>
-            <!--<span class="tooltiptext">Tooltip text</span>-->
           </a>
         </li>
         <li>
@@ -463,33 +375,53 @@
     <div class="modal-content">
 
       <div class="lbSlides">
-        <div class="numbertext">1 / 6</div>
+        <div class="numbertext">1 / 10</div>
         <img src="assets/img/logo.png" class="modal-img">
       </div>
 
       <div class="lbSlides">
-        <div class="numbertext">2 / 6</div>
+        <div class="numbertext">2 / 10</div>
         <img src="assets/img/img1.jfif" class="modal-img">
       </div>
 
       <div class="lbSlides">
-        <div class="numbertext">3 / 6</div>
+        <div class="numbertext">3 / 10</div>
         <img src="assets/img/img2.jfif" class="modal-img">
       </div>
 
       <div class="lbSlides">
-        <div class="numbertext">4 / 6</div>
+        <div class="numbertext">4 / 10</div>
         <img src="assets/img/img3.jfif" class="modal-img">
       </div>
 
       <div class="lbSlides">
-        <div class="numbertext">5 / 6</div>
+        <div class="numbertext">5 / 10</div>
         <img src="assets/img/3voitures.jpg" class="modal-img">
       </div>
 
       <div class="lbSlides">
-        <div class="numbertext">6 / 6</div>
+        <div class="numbertext">6 / 10</div>
         <img src="assets/img/salon_auto.jpg" class="modal-img">
+      </div>
+
+      <div class="lbSlides">
+        <div class="numbertext">7 / 10</div>
+        <img src="assets/img/voiture_vente_01.jfif" class="modal-img">
+      </div>
+
+      <div class="lbSlides">
+        <div class="numbertext">8 / 10</div>
+        <img src="assets/img/voiture_vente_02.jfif" class="modal-img">
+      </div>
+
+      <div class="lbSlides">
+        <div class="numbertext">9 / 10</div>
+        <img src="assets/img/voiture_vente_03.jfif" class="modal-img">
+      </div>
+
+      <div class="lbSlides">
+        <div class="numbertext">10 / 10</div>
+        <img src="assets/img/voiture_vente_04.jfif" class="modal-img">
       </div>
 
       <!-- Contrôles -->
@@ -538,7 +470,9 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
   <!--<script src="./assets/librairie/sweetlalert.js"></script>-->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/boutique.js"></script>
+  <script src="./assets/js/lightbox.js"></script>
+  <script src="./assets/js/slider.js"></script>
   <script src="./assets/js/index.js"></script>
   <script src="./assets/js/devise.js"></script>
   <script src="./assets/js/darkMode.js"></script>
