@@ -21,7 +21,7 @@
       <ul class="navigation">
         <li class="parent"><a link="accueil" class="link" href="#">Acceuil</a></li>
         <li class="parent"><a link="propos" class="link" href="#">à  propos</a></li>
-        <li class="parent"><a link="location" class="link" href="#">Location</a></li>
+        <li class="parent"><a link="boutique" class="link" href="#">Location</a></li>
         <li class="parent"><a link="contact" class="link" href="#">Contact</a></li>
       </ul>
        <!-- fonctionnalité dark mode -->
@@ -91,7 +91,7 @@
     </div>
   </section>
 
-  <section id="Boutique">
+  <section id="boutique">
 
     <h1 class= "divider gradient ">Boutique</h1>
 
@@ -162,7 +162,7 @@
         <h1>Twingo S</h1>
         <p class="price" data-value="265090">265 090 $</p>
         <p>La bête de la ville</p>
-        <p><a href="#section1"><button>Voir</button></a></p>
+        <p><a data-show="section1" href="#section1"><button>Voir</button></a></p>
       </div>
 
       <div class="card">
@@ -206,8 +206,8 @@
             tristique magna. Enim praesent elementum facilisis leo vel fringilla est."
           </p>
           <div class="controle_bouton_produit">
-            <button class="bouton_produit">
-              <span check-contact="section1" class="texte_bouton_produit">contact</span>
+            <button check-contact="section1" class="bouton_produit">
+              <span class="texte_bouton_produit">contact</span>
             </button>
           </div>
         </div>
@@ -269,7 +269,7 @@
           tristique magna. Enim praesent elementum facilisis leo vel fringilla est."
         </p>
         <div class="controle_bouton_produit">
-          <button class="bouton_produit">
+          <button check-contact="section2" class="bouton_produit">
             <span class="texte_bouton_produit">contact</span>
           </button>
         </div>
@@ -332,7 +332,7 @@
           tristique magna. Enim praesent elementum facilisis leo vel fringilla est."
         </p>
         <div class="controle_bouton_produit">
-          <button class="bouton_produit">
+          <button check-contact="section3" class="bouton_produit">
             <span class="texte_bouton_produit">contact</span>
           </button>
         </div>
@@ -395,7 +395,7 @@
           tristique magna. Enim praesent elementum facilisis leo vel fringilla est."
         </p>
         <div class="controle_bouton_produit">
-          <button class="bouton_produit">
+          <button check-contact="section4" class="bouton_produit">
             <span class="texte_bouton_produit">contact</span>
           </button>
         </div>
@@ -539,7 +539,7 @@
           <input type="email" id="mail" name="user_mail" class="feedback-input" placeholder="Email">
       </div>
       <div>
-        <input type="text" id="form_voiture" name="form_voiture" class="feedback-input" placeholder="Voiture" style="display: none;">
+        <input type="text" id="form_voiture" name="form_voiture" class="feedback-input" placeholder="Voiture" disabled style="display: none;">
       </div>
       <div>
           <textarea id="msg" name="user_message" class="feedback-input" placeholder="Message"></textarea>
@@ -557,7 +557,7 @@
   <script src="./assets/librairie/jquery3.6.0.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
-  <!--<script src="./assets/librairie/sweetlalert.js"></script>-->
+  <script src="./assets/librairie/sweetlalert.js"></script>
   <script src="./assets/js/boutique.js"></script>
   <script src="./assets/js/lightbox.js"></script>
   <script src="./assets/js/slider.js"></script>
