@@ -1,0 +1,71 @@
+form { 
+    max-width:520px; 
+    margin:100px auto; 
+}
+
+.feedback-input {
+  color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 42px;
+  background-color: transparent;
+  border:2px solid #9b5c35;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid  #9b5c35; }
+
+#contact h1{  
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+#confirm_button{
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica,"sans-serif";
+    transition: all .2s;
+    margin-top: 20px;
+    margin-left: 180px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: linear-gradient(to bottom right, #161515, #9b5c35);
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    width: 100px;
+    color: white;
+}
+
+#confirm_button:hover {
+    background: linear-gradient(to bottom right, #161515, #9b5c35);
+}
+   
+#confirm_button > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+}
+   
+#confirm_button:hover svg {
+    transform: translateX(5px);
+}
+   
+#confirm_button:active {
+    transform: scale(0.95);
+}
