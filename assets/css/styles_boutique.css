@@ -5,6 +5,20 @@
     display: block;
 }
 
+.barre_change {
+	display: flex;
+	justify-content: center;
+}
+
+.bouton_change {
+	height: 100px;
+	width: 100px;
+	margin: 0 1%;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
 /*Sélection Produit*/
 
 .card-container {
