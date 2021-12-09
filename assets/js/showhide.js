@@ -1,4 +1,11 @@
-
+$(".bouton_produit").on("click", function(){
+    name_car = $(this).closest(".produit").find("h1").text();
+    sectionOut();
+    $("#contact").fadeIn();
+    $("#form_voiture").fadeIn().val(name_car);
+    
+    
+});
 
 $(".parent .link").on("click", function(){
     call_page = $(this).attr('link');
@@ -12,8 +19,8 @@ $(".parent .link").on("click", function(){
             $("#propos").fadeIn();
             break;
 
-        case "location":
-            $("#location").fadeIn();
+        case "boutique":
+            $("#boutique").fadeIn();
             break;
 
         case "contact":
@@ -28,5 +35,5 @@ $(".parent .link").on("click", function(){
 })
 
 function sectionOut(){
-  $("section").fadeout();
+  $("section").fadeOut();
 }
