@@ -127,43 +127,6 @@
 	margin: 0;
 }
 
-/*
-#produit .details_produit h1:before{
-	position: absolute;
-	content: '';
-	right: 0%;
-	top: 0%;
-	transform: translate(25px, -15px);
-	font-family: 'Farsan', cursive;
-	display: inline-block;
-	background: #FFA69E;
-	border-radius: 5px;
-	font-size: 14px;
-	padding: 5px;
-	color: #FFF;
-	margin: 0;
-	animation: chan-sh 6s ease infinite;
-
-}
-
-
-@keyframes chan-sh {
-	from  {content: 'free shipping';}
-	to  {content: 'New';}
-
-}
-
-*/
-
-/*Product Rating
-.hint-star {
-	display: inline-block;
-	margin-left: 0.5em;
-	color: gold;
-	width: 50%;
-}
-*/
-
 .details_produit > p {
 	padding: 0 30px 0 30px;
 	font-family: 'Roboto';
@@ -213,12 +176,10 @@
 	margin:0;
 }
 
-
 .texte_bouton_produit {
 	z-index: 3;
 	font-weight: bolder;
 }
-
 
 .image_produit {
 	transition: all 0.3s ease-out;
@@ -316,27 +277,5 @@
 .nav li a:hover {
 	opacity: 0.5;
 }
-
-/* Tooltip text
-.nav li a .tooltiptext {
-	visibility: hidden;
-	width: 120px;
-	background-color: black;
-	color: #fff;
-	text-align: center;
-	padding: 5px 0;
-	border-radius: 6px;
-	position: absolute;
-	-webkit-transform: translateX(-100%);
-	transform: translateX(-100%);
-
-}
-
-
-.nav li a:hover .tooltiptext {
-	visibility: visible;
-	opacity: 1;
-}
-*/
 
 /*Fin Barre de Navigation Produit*/

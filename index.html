@@ -96,7 +96,7 @@
     <h1 class= "divider gradient ">Boutique</h1>
 
     <div class="barre_change">
-      <button class="bouton_change">
+      <button class="bouton_change" devise="dollar">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
           <g>
@@ -125,7 +125,7 @@
           </g>
          </svg>
       </button>
-      <button class="bouton_change">
+      <button class="bouton_change" devise="euro">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463 463" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 463 463">
           <g>
             <path d="M395.195,67.805C351.471,24.08,293.336,0,231.5,0S111.529,24.08,67.805,67.805S0,169.664,0,231.5   s24.08,119.971,67.805,163.695S169.664,463,231.5,463s119.971-24.08,163.695-67.805S463,293.336,463,231.5   S438.92,111.529,395.195,67.805z M384.589,384.589C343.697,425.48,289.329,448,231.5,448s-112.197-22.52-153.089-63.411   S15,289.329,15,231.5S37.52,119.303,78.411,78.411S173.671,15,231.5,15s112.197,22.52,153.089,63.411S448,173.671,448,231.5   S425.48,343.697,384.589,384.589z"/>
@@ -133,7 +133,7 @@
           </g>
         </svg>
       </button>
-      <button class="bouton_change">
+      <button class="bouton_change" devise="yen">
         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 155.139 155.139" style="enable-background:new 0 0 155.139 155.139;" xml:space="preserve">
           <g>
@@ -160,7 +160,7 @@
       <div class="card">
         <img src="assets/img/voiture_vente_01.jfif" onclick="openModal();currentSlide(7)" alt="Denim Jeans" style="width:100% ">
         <h1>Twingo S</h1>
-        <p class="price" data-value="265090">265 090 $</p>
+        <p class="price" data-value="265090">265090 $</p>
         <p>La bête de la ville</p>
         <p><a data-show="section1" href="#section1"><button>Voir</button></a></p>
       </div>
@@ -168,7 +168,7 @@
       <div class="card">
         <img src="assets/img/voiture_vente_02.jfif" onclick="openModal();currentSlide(8)" alt="Denim Jeans" style="width:100%">
         <h1>Aston Martin DB5</h1>
-        <p class="price" data-value="2300000">2 300 000 $</p>
+        <p class="price" data-value="2300000">2300000 $</p>
         <p>La destructrice de porte-monnaie</p>
         <p><a href="#section2"><button>Voir</button></a></p>
       </div>
@@ -176,7 +176,7 @@
       <div class="card">
         <img src="assets/img/voiture_vente_03.jfif" onclick="openModal();currentSlide(9)" alt="Denim Jeans" style="width:100%">
         <h1>300 SL Roadster</h1>
-        <p class="price" data-value="645000">645 000 $</p>
+        <p class="price" data-value="645000">645000 $</p>
         <p>Un classique</p>
         <p><a href="#section3"><button>Voir</button></a></p>
       </div>
@@ -184,7 +184,7 @@
       <div class="card">
         <img src="assets/img/voiture_vente_04.jfif" onclick="openModal();currentSlide(10)" alt="Denim Jeans" style="width:100%">
         <h1>GLA</h1>
-        <p class="price" data-value="360000">360 000 $</p>
+        <p class="price" data-value="360000">360000 $</p>
         <p>Elle décoiffe !</p>
         <p><a href="#section4"><button>Voir</button></a></p>
       </div>
@@ -221,7 +221,7 @@
               <li><strong>Poids: </strong> 1 350 Kg </li>
               <li><strong>Maniabilité: </strong> 6 / 10</li>
               <li><strong>Hors piste: </strong> 2 / 5 </li>
-              <li><strong>Prix: </strong>265 090 $</li>
+              <li><strong>Prix: </strong> <span class="prix_produit" data-value="265090">265090 $</span></li>
             </ul>
           </div>
         </div>
@@ -347,7 +347,7 @@
             <li><strong>Poids: </strong> 1 293 Kg </li>
             <li><strong>Maniabilité: </strong> 7 / 10</li>
             <li><strong>Hors piste: </strong> 2 / 5 </li>
-            <li><strong>Prix: </strong>645 000 $</li>
+            <li><strong>Prix: </strong> <span class="prix_produit" data-value="645000">645000 $</span></li>
           </ul>
         </div>
       </div>
@@ -410,7 +410,7 @@
             <li><strong>Poids: </strong> 946 Kg </li>
             <li><strong>Maniabilité: </strong> 9 / 10</li>
             <li><strong>Hors piste: </strong> 3 / 5 </li>
-            <li><strong>Prix: </strong>360 000 $</li>
+            <li><strong>Prix: </strong> <span class="prix_produit" data-value="360000">360000 $</span></li>
           </ul>
         </div>
       </div>
@@ -511,21 +511,6 @@
 
     </div>
   </div>
-
-  <!-- fonctionnalité changer de devise (il suffit de cliquer sur un des symboles pour que la devise change) -->
-  <!-- data-value est le prix en euro (à changer pour mettre le bon prix des voitures) -->
-  <section id="boutique">
-        <div class="devise">
-            <img src="./assets/img/euro.jpg" class="imgDevise" devise="euro" data-value="1500"  alt="euro"/>
-            <img src="./assets/img/dollar.png" class="imgDevise" devise="dollar" data-value="1500" alt="dollar"/>
-            <img src="./assets/img/yen.png" class="imgDevise" devise="yen" data-value="1500" alt="yen"/>
-
-        </div>
-        <p id="prix">Prix : 1500 € </p>
-    </section>
-
-
-  <!-- fin fonctionnalité changer de devise -->
 
   <section id="contact">
     <div>
