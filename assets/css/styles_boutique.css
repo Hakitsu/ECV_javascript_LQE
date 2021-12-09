@@ -3,7 +3,20 @@
 #Boutique {
     margin: 2% auto;
     display: block;
-    margin-right: 120px;
+}
+
+.barre_change {
+	display: flex;
+	justify-content: center;
+}
+
+.bouton_change {
+	height: 100px;
+	width: 100px;
+	margin: 0 1%;
+	border: none;
+	background: none;
+	cursor: pointer;
 }
 
 /*Sélection Produit*/
@@ -16,9 +29,9 @@
 	align-items: center;
 	align-content: center;
 	max-width: 50%;
-	margin: 5% 25%;
+	margin: 1% 25%;
   }
-  
+
   .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	max-width: 300px;
@@ -26,12 +39,12 @@
 	text-align: center;
 	font-family: 'Roboto';
   }
-  
+
   .price {
 	color: grey;
 	font-size: 22px;
   }
-  
+
   .card button {
 	border: none;
 	outline: 0;
@@ -44,12 +57,12 @@
 	font-size: 18px;
 	font-family: 'Roboto';
   }
-  
+
   .card button:hover {
 	opacity: 0.7;
   }
-  
-  
+
+
  /*Fiche Produit*/
 
  .section_vente {
@@ -90,17 +103,18 @@
 	margin: 4% auto;
 	height: 70%;
 	width: 80%;
-	
+
 }
 
 .details_produit {
 	position: relative;
-	text-align: left;
-	overflow: hidden;
-	height: 100%;
-	float: left;
-	width: 50%;
-
+    text-align: left;
+    overflow: hidden;
+    height: 100%;
+    float: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .details_produit h1{
@@ -117,7 +131,7 @@
 #produit .details_produit h1:before{
 	position: absolute;
 	content: '';
-	right: 0%; 
+	right: 0%;
 	top: 0%;
 	transform: translate(25px, -15px);
 	font-family: 'Farsan', cursive;
@@ -136,12 +150,12 @@
 @keyframes chan-sh {
 	from  {content: 'free shipping';}
 	to  {content: 'New';}
-	
+
 }
 
 */
 
-/*Product Rating  
+/*Product Rating
 .hint-star {
 	display: inline-block;
 	margin-left: 0.5em;
@@ -158,7 +172,7 @@
 	color: #7d7d7d;
 	overflow-y: hidden;
 	font-size: 25px;
-	height: 65%;
+	margin: auto;
 }
 
 .controle_bouton_produit{
@@ -183,7 +197,7 @@
 	padding: 0;
 	margin: 0;
 	transition: 0.3s;
-	
+
 }
 
 .bouton_produit:hover{
@@ -201,7 +215,7 @@
 
 
 .texte_bouton_produit {
-	z-index: 3; 
+	z-index: 3;
 	font-weight: bolder;
 }
 
@@ -220,6 +234,7 @@
 .produit img {
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 }
 
 .info_produit {
@@ -230,7 +245,7 @@
     position: absolute;
     line-height: 2.9;
     text-align: left;
-    cursor: cell;
+    cursor: context-menu;
     color: #FFF;
     height: 100%;
     width: 100%;
@@ -302,7 +317,7 @@
 	opacity: 0.5;
 }
 
-/* Tooltip text 
+/* Tooltip text
 .nav li a .tooltiptext {
 	visibility: hidden;
 	width: 120px;
@@ -325,7 +340,3 @@
 */
 
 /*Fin Barre de Navigation Produit*/
-
-
-
-
