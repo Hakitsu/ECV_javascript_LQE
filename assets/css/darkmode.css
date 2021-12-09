@@ -3,13 +3,13 @@ body.darkMode{
     color:white
 }
 
-#SectionàPropos.darkMode{
+#propos.darkMode{
     background-color: #2b2929;
     color:white;
 
 }
 
-#SectionàPropos h1.darkMode {
+#propos h1.darkMode {
     color:white; 
     padding-left: 750px;
 } 

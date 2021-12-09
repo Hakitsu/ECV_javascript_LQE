@@ -17,7 +17,7 @@ $(".parent .link").on("click", function(){
             break;
 
         case "contact":
-            $("#contact:").fadeIn();
+            $("#contact").fadeIn();
             break;
                         
         default:
