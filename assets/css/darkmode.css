@@ -20,17 +20,17 @@ body.darkMode{
     text-align: center;
 } 
 
-#Boutique.darkMode {
+#boutique.darkMode {
   background-color: #2b2929;
   color:white
 }
 
-#Boutique h1.darkMode {
+#boutique h1.darkMode {
   color:white; 
   text-align: center;
 } 
 
-#Boutique button.darkMode{
+#boutique button.darkMode{
   color: black;
 	background-color: white;
 }

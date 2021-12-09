@@ -1,10 +1,10 @@
 let buttonDarkMode = $('.buttonDarkMode');
 let SectionàPropos = $('#propos');
 let SectionàProposH1 = $('#propos h1 ');
-let SectionBoutiqueH1 = $('#Boutique h1');
+let SectionBoutiqueH1 = $('#boutique h1');
 let feedbackInput = $('.feedback-input');
-let boutique = $('#Boutique');
-let card = $('#Boutique button')
+let boutique = $('#boutique');
+let card = $('#boutique button')
 
 buttonDarkMode.on('click', function() {
     if(buttonDarkMode.hasClass('darkMode')){
