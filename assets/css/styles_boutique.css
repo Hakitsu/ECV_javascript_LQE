@@ -5,9 +5,20 @@
     display: block;
 }
 
+.section_menu_vente {
+	margin: 0px;
+	bottom: 0px;
+	width: 100%;
+	float: left;
+	height: 82vh;
+}
+
+/*Change*/
+
 .barre_change {
 	display: flex;
 	justify-content: center;
+	margin: 4% 0% 3% 0%;
 }
 
 .bouton_change {
@@ -28,8 +39,11 @@
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	/*
 	max-width: 50%;
 	margin: 1% 25%;
+	*/
+	margin: 1% 0% 4% 0%;
   }
 
   .card {
@@ -63,7 +77,7 @@
   }
 
 
- /*Fiche Produit*/
+ /*Section Produit*/
 
  .section_vente {
 	margin: 0px;
@@ -243,8 +257,6 @@
 	transform: scale(1.2, 1.2);
 }
 
-/*Fin Fiche Produit*/
-
 /*Barre de Navigation Produit*/
 
 .nav_vente {
@@ -278,4 +290,3 @@
 	opacity: 0.5;
 }
 
-/*Fin Barre de Navigation Produit*/
