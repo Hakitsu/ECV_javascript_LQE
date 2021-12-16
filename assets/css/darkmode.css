@@ -26,18 +26,25 @@ body.darkMode{
 }
 
 #boutique h1.darkMode {
-  color:white;
+  /*color:white;*/
   text-align: center;
 }
 
 #boutique button.darkMode{
   color: black;
+  background-color: white;
+	/*filter: invert(1);*/
+}
+#boutique button.darkMode.invert{
+  color: black;
+  background-color: #FFFFFF00 !important;
 	filter: invert(1);
 }
 
 #form_voiture.darkMode{
   color:white;
 }
+
 
 .button-62 {
     background: linear-gradient(to bottom right, #161515, #9b5c35);
