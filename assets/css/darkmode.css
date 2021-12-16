@@ -16,9 +16,9 @@ body.darkMode{
 }
 
 #propos h1.darkMode {
-    color:white; 
+    color:white;
     text-align: center;
-} 
+}
 
 #boutique.darkMode {
   background-color: #2b2929;
@@ -26,19 +26,19 @@ body.darkMode{
 }
 
 #boutique h1.darkMode {
-  color:white; 
+  color:white;
   text-align: center;
-} 
+}
 
 #boutique button.darkMode{
   color: black;
-	background-color: white;
+	filter: invert(1);
 }
 
 #form_voiture.darkMode{
   color:white;
 }
-    
+
 .button-62 {
     background: linear-gradient(to bottom right, #161515, #9b5c35);
     border: 0;
@@ -60,11 +60,11 @@ body.darkMode{
     touch-action: manipulation;
     white-space: nowrap;
   }
-  
+
   .button-62:not([disabled]):focus {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(114, 67, 38, 0.5);
   }
-  
+
   .button-62:not([disabled]):hover {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(146, 88, 51, 0.5);
   }
