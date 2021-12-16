@@ -21,8 +21,8 @@ buttonDarkMode.on('click', function() {
     feedbackInput.removeClass('darkMode')
 
     boutique.removeClass('darkMode')
-    SectionBoutiqueH1.removeClass('darkMode')
-    SectionBoutiqueH1.addClass('divider gradient')
+    //SectionBoutiqueH1.removeClass('darkMode')
+    //SectionBoutiqueH1.addClass('divider gradient')
     }
     else{
         buttonDarkMode.text("Désactiver le dark mode ")
@@ -39,8 +39,8 @@ buttonDarkMode.on('click', function() {
         feedbackInput.addClass('darkMode')
 
         boutique.addClass('darkMode')
-        SectionBoutiqueH1.removeClass('divider gradient')
-        SectionBoutiqueH1.addClass('darkMode')
+        //SectionBoutiqueH1.removeClass('divider gradient')
+        //SectionBoutiqueH1.addClass('darkMode')
        
         $('body').addClass('darkMode')
         
