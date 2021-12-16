@@ -34,6 +34,10 @@ body.darkMode{
   color: black;
 	background-color: white;
 }
+
+#form_voiture.darkMode{
+  color:white;
+}
     
 .button-62 {
     background: linear-gradient(to bottom right, #161515, #9b5c35);
